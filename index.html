@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Manicure</title>
+  <link rel="stylesheet" href="/Style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Agenda Manicure</h1>
+
+    <div id="home">
+      <button onclick="mostrarAgendamento()">Agendar Horário</button>
+      <button onclick="mostrarMeusAgendamentos()">Meus Agendamentos</button>
+    </div>
+
+    <div id="form-agendamento">
+      <h2>Novo Agendamento</h2>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data">
+
+      <label for="horario">Horário:</label>
+      <select id="horario">
+        <option value="">Selecione</option>
+        <option value="13:00">13:00</option>
+        <option value="13:30">13:30</option>
+        <option value="14:00">14:00</option>
+        <option value="14:30">14:30</option>
+        <option value="15:00">15:00</option>
+        <option value="15:30">15:30</option>
+        <option value="16:00">16:00</option>
+        <option value="16:30">16:30</option>
+        <option value="17:00">17:00</option>
+        <option value="17:30">17:30</option>
+        <option value="18:00">18:00</option>
+        <option value="18:30">18:30</option>
+        <option value="19:00">19:00</option>
+        <option value="19:30">19:30</option>
+        <option value="20:00">20:00</option>
+        <option value="20:30">20:30</option>
+        <option value="21:00">21:00</option>
+        <option value="21:30">21:30</option>
+        <option value="22:00">22:00</option>
+        <option value="22:30">22:30</option>
+      </select>
+
+
+      <label for="profissional">Profissional:</label>
+      <select id="profissional">
+        <option value="">Selecione</option>
+        <option value="Amanda">Amanda</option>
+        <option value="Nane">Nane</option>
+        <option value="Miguel">Miguel</option>
+      </select>
+
+      <button id="btn-agendar" onclick="agendar()" disabled>Agendar Horário</button>
+      <button onclick="voltarHome()">Cancelar</button>
+    </div>
+
+    <div id="meus-agendamentos">
+      <h2>Meus Agendamentos</h2>
+      <div id="lista-agendamentos"></div>
+      <button onclick="voltarHome()">Voltar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

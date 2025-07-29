@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+button,
+select,
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+button {
+  background-color: #f8b500;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6a300;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#form-agendamento,
+#meus-agendamentos {
+  display: none;
+  margin-top: 20px;
+}
+
+.agendamento {
+  background: #f1f1f1;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #f8b500;
+  color: #444;
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-top: 10px;
+}
